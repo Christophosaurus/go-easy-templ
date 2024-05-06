@@ -1,0 +1,6 @@
+server:
+  host: localhost
+  port: 4000
+  env: dev
+db:
+  dsn: postgres://dummyUser:dummyPassword@localhost:13307/dummydb
