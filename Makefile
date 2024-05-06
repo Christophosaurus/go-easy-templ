@@ -1,5 +1,5 @@
 run:
-	@go run ./cmd/dummyapp/api/main.go -log-level DEBUG
+	@go run ./cmd/dummyapp/api -log-level DEBUG
 
 test:
 	@go test ./...

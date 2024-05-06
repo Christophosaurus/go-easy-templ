@@ -38,7 +38,7 @@ func main() {
 	}
 	defer db.Close()
 
-	dummyRepo := repository.NewDummyRepository(nil)
+	dummyRepo := repository.NewDummyRepository(db)
 	repositories := repository.NewRepositories(dummyRepo)
 	dummyService := service.NewDummy(config, logger, repositories)
 	services := service.NewServices(dummyService)
